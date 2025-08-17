@@ -59,9 +59,12 @@ export default function Header() {
       <button className="text-3xl p-2 md:hidden" onClick={toggleMobileMenu}>
         <i class="bx bx-menu"></i>
       </button>
-      
+
       {/* mobile menu -hidden by default */}
-      <div id="mobileMenu" className="hidden fixed top-14 right-0 left-0 bg-black p-5 md:hidden">
+      <div
+        id="mobileMenu"
+        className="hidden fixed top-14 right-0 left-0 bg-black p-5 md:hidden"
+      >
         <nav className="flex flex-col gap-4 items-center">
           <a
             href="#"
@@ -89,10 +92,14 @@ export default function Header() {
           </a>
         </nav>
         <div className="flex flex-col gap-3 w-full mt-4">
-          <button className="bg-purple-700 py-2 rounded hover:bg-purple-900">Play Now</button>
-          <button className="bg-gray-500 py-2 rounded hover:bg-gray-600">NFt Store</button>
+          <button className="bg-purple-700 py-2 rounded hover:bg-purple-900">
+            Play Now
+          </button>
+          <button className="bg-gray-500 py-2 rounded hover:bg-gray-600">
+            NFt Store
+          </button>
         </div>
-       </div> 
+      </div>
     </header>
   );
 }
